@@ -26,7 +26,7 @@ export default function Header() {
             <IoSearch size={24} />
           </div>
           <div>
-            <p>O que você quer ouvir?</p>
+            <p>O que você quer ouvir? |</p>
           </div>
           <div>
             <IoFolderOpenOutline size={24} />
