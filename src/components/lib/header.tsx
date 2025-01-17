@@ -8,7 +8,7 @@ import { PiUsersThreeBold } from "react-icons/pi";
 
 export default function Header() {
   return (
-    <div className="flex justify-between items-center p-2">
+    <div className="flex justify-between items-center px-2">
       <div className="flex gap-2">
         <div>
           <BsThreeDots size={30} />
@@ -21,12 +21,14 @@ export default function Header() {
         <div className="rounded-full bg-zinc-900 p-3">
           <FaHouse size={24} />
         </div>
-        <div className="flex gap-2 justify-center rounded-full bg-zinc-900 text-zinc-500 font-semibold p-3">
-          <div>
+        <div className="flex w-96 justify-between rounded-full bg-zinc-900 text-zinc-400 font-semibold p-3">
+          <div className="flex gap-2">
             <IoSearch size={24} />
-          </div>
-          <div>
-            <p>O que você quer ouvir? |</p>
+            <input
+              type="text"
+              placeholder="O que você quer ouvir?"
+              className="bg-transparent outline-none text-white placeholder:text-zinc-400"
+            />
           </div>
           <div>
             <IoFolderOpenOutline size={24} />

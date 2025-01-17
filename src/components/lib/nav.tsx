@@ -32,16 +32,17 @@ export default function Nav() {
       <div>
         <div className="grid grid-cols-4 gap-3">
           {playlists.map((playlist, index) => (
-            <div key={index} className="bg-zinc-600 flex rounded-md gap-3">
+            <button key={index} className="bg-zinc-600 flex rounded-md gap-3">
               <img
                 src={playlist.imgSrc}
-                alt=""
+                alt={playlist.title}
+                title={playlist.title}
                 className="w-16 h-16 rounded-l-md"
               />
               <h1 className="flex items-center text-lg font-bold">
                 {playlist.title}
               </h1>
-            </div>
+            </button>
           ))}
         </div>
       </div>
@@ -52,28 +53,28 @@ export default function Nav() {
         </div>
         <div className="flex">
           {playboyCard.map((card, index) => (
-            <div key={index} className="flex flex-col gap-3">
-              <img src={card.imgSrc} alt="" className="h-44 w-44 rounded-md" />
+            <button key={index} className="flex flex-col gap-3">
+              <img src={card.imgSrc} alt="playb0y" title="playb0y" className="h-44 w-44 rounded-md" />
               <p className="text-sm text-zinc-400">
                 {card.title}
               </p>
-            </div>
+            </button>
           ))}
         </div>
       </div>
       <div className="flex flex-col gap-6">
         <div className="flex justify-between">
-          <h1 className="text-3xl font-extrabold">Playb0y!</h1>
+          <h1 className="text-3xl font-extrabold">Cromadinho!</h1>
           <p className="flex items-center text-sm">Mostrar Tudo</p>
         </div>
         <div className="flex">
           {cromadinhoCard.map((card, index) => (
-            <div key={index} className="flex flex-col gap-3">
-              <img src={card.imgSrc} alt="" className="h-44 w-44 rounded-md" />
+            <button key={index} className="flex flex-col gap-3">
+              <img src={card.imgSrc} alt="cromadinho" title="cromadinho" className="h-44 w-44 rounded-md" />
               <p className="text-sm text-zinc-400">
                 {card.title}
               </p>
-            </div>
+            </button>
           ))}
         </div>
       </div>

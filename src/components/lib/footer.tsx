@@ -17,7 +17,7 @@ export default function Footer() {
     <div className="flex justify-between p-2">
       <div className="flex gap-4">
         <div>
-          <img src={albumPic} alt="" className="w-12 h-12 rounded-sm" />
+          <img src={albumPic} alt="" className="w-14 h-14 rounded-sm" />
         </div>
         <div className="flex flex-col justify-center">
           <a href="/" className="text-sm font-medium">
