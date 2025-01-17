@@ -5,6 +5,11 @@ import pauseButton from "../../assets/pause.png";
 import previousButton from "../../assets/previous.png";
 import repeatButton from "../../assets/repeat.png";
 import shuffleButton from "../../assets/shuffle.png";
+import connectToADeviceButton from "../../assets/connecttoadevice.png";
+import fullscreenButton from "../../assets/fullscreen.png";
+import lyricsButton from "../../assets/lyrics.png";
+import volumeButton from "../../assets/volume.png";
+import queueButton from "../../assets/queue.png";
 import { FaCheckCircle } from "react-icons/fa";
 
 export default function Footer() {
@@ -46,7 +51,25 @@ export default function Footer() {
         </div>
         <div></div>
       </div>
-      <div>asdsadsa</div>
+      <div className="flex">
+        <div className="flex gap-4">
+          <button>
+            <img src={lyricsButton} alt="" className="w-4 h-4" />
+          </button>
+          <button>
+            <img src={queueButton} alt="" className="w-4 h-4" />
+          </button>
+          <button>
+            <img src={connectToADeviceButton} alt="" className="w-4 h-4" />
+          </button>
+          <button>
+            <img src={volumeButton} alt="" className="w-4 h-4" />
+          </button>
+          <button>
+            <img src={fullscreenButton} alt="" className="w-4 h-4" />
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

@@ -5,9 +5,11 @@ import Main from "./components/lib/main.tsx";
 
 export default function App() {
   return (
-    <div className="flex flex-col w-screen h-screen bg-black text-white p-2 gap-2">
+    <div className="flex flex-col w-screen h-screen bg-black text-white p-2 gap-2 overflow-hidden">
       <Header />
-      <Main />
+      <div className="flex-1 overflow-hidden flex">
+        <Main />
+      </div>
       <Footer />
     </div>
   );
