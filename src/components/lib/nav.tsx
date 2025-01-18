@@ -8,16 +8,17 @@ export default function Nav() {
     title: "This Is Mc IG",
     imgSrc: playlistPic,
   });
-  const playboyCard = Array(7).fill({
+  const playboyCard = Array(6).fill({
     title: "Lorem ipsum dolor sit amet consectetur adipisicing...",
     imgSrc: playboyPic,
   });
-  const cromadinhoCard = Array(7).fill({
+  const cromadinhoCard = Array(6).fill({
     title: "Lorem ipsum dolor sit amet consectetur adipisicing...",
     imgSrc: cromadinhoPic,
   });
+
   return (
-    <div className="flex flex-col flex-1 bg-neutral-900 rounded-md w-full overflow-hidden">
+    <div className="flex flex-col flex-1 bg-neutral-900 rounded-md overflow-y-auto max-h-screen scrollbar-thumb">
       <div className="bg-gradient-to-t from-neutral-900 to-red-600 rounded-t-md">
         <div className="flex gap-2 p-4 px-8">
           <button className="bg-white text-black p-1.5 px-3 text-sm rounded-full font-medium">
@@ -48,18 +49,23 @@ export default function Nav() {
           </div>
         </div>
       </div>
+
       <div className="flex flex-col gap-6 mt-4 py-2 px-6">
         <div className="flex justify-between">
-          <button className="text-3xl font-extrabold hover:underline">Playb0y!</button>
-          <p className="flex items-center text-zinc-400 text-sm font-semibold hover:underline pr-10">Mostrar Tudo</p>
+          <button className="text-3xl font-extrabold hover:underline">
+            Playb0y!
+          </button>
+          <p className="flex items-center text-zinc-400 text-sm font-semibold hover:underline pr-10">
+            Mostrar Tudo
+          </p>
         </div>
-        <div className="flex">
+        <div className="flex flex-wrap gap-4">
           {playboyCard.map((card, index) => (
-            <div className="flex flex-col py-3 p-1 w-52 rounded-md hover:bg-neutral-800">
-              <button
-                key={index}
-                className="flex flex-col justify-center items-center"
-              >
+            <div
+              key={index}
+              className="flex flex-col py-3 p-1 w-52 rounded-md hover:bg-neutral-800"
+            >
+              <button className="flex flex-col justify-center items-center">
                 <img
                   src={card.imgSrc}
                   alt="playb0y"
@@ -76,20 +82,84 @@ export default function Nav() {
       </div>
       <div className="flex flex-col gap-6 mt-4 py-2 px-6">
         <div className="flex justify-between">
-          <button className="text-3xl font-extrabold hover:underline">Cromadinho!</button>
-          <p className="flex items-center text-zinc-400 text-sm font-semibold hover:underline pr-10">Mostrar Tudo</p>
+          <button className="text-3xl font-extrabold hover:underline">
+            Cromadinho!
+          </button>
+          <p className="flex items-center text-zinc-400 text-sm font-semibold hover:underline pr-10">
+            Mostrar Tudo
+          </p>
         </div>
-        <div className="flex">
+        <div className="flex flex-wrap gap-4">
           {cromadinhoCard.map((card, index) => (
-            <div className="flex flex-col py-3 p-1 w-52 rounded-md hover:bg-neutral-800">
-              <button
-                key={index}
-                className="flex flex-col justify-center items-center"
-              >
+            <div
+              key={index}
+              className="flex flex-col py-3 p-1 w-52 rounded-md hover:bg-neutral-800"
+            >
+              <button className="flex flex-col justify-center items-center">
                 <img
                   src={card.imgSrc}
-                  alt="playb0y"
-                  title="playb0y"
+                  alt="cromadinho"
+                  title="cromadinho"
+                  className="h-44 w-44 rounded-md"
+                />
+                <p className="text-sm text-zinc-400 break-words whitespace-normal">
+                  {card.title}
+                </p>
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="flex flex-col gap-6 mt-4 py-2 px-6">
+        <div className="flex justify-between">
+          <button className="text-3xl font-extrabold hover:underline">
+            Cromadinho!
+          </button>
+          <p className="flex items-center text-zinc-400 text-sm font-semibold hover:underline pr-10">
+            Mostrar Tudo
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-4">
+          {cromadinhoCard.map((card, index) => (
+            <div
+              key={index}
+              className="flex flex-col py-3 p-1 w-52 rounded-md hover:bg-neutral-800"
+            >
+              <button className="flex flex-col justify-center items-center">
+                <img
+                  src={card.imgSrc}
+                  alt="cromadinho"
+                  title="cromadinho"
+                  className="h-44 w-44 rounded-md"
+                />
+                <p className="text-sm text-zinc-400 break-words whitespace-normal">
+                  {card.title}
+                </p>
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="flex flex-col gap-6 mt-4 py-2 px-6">
+        <div className="flex justify-between">
+          <button className="text-3xl font-extrabold hover:underline">
+            Cromadinho!
+          </button>
+          <p className="flex items-center text-zinc-400 text-sm font-semibold hover:underline pr-10">
+            Mostrar Tudo
+          </p>
+        </div>
+        <div className="flex flex-wrap gap-4">
+          {cromadinhoCard.map((card, index) => (
+            <div
+              key={index}
+              className="flex flex-col py-3 p-1 w-52 rounded-md hover:bg-neutral-800"
+            >
+              <button className="flex flex-col justify-center items-center">
+                <img
+                  src={card.imgSrc}
+                  alt="cromadinho"
+                  title="cromadinho"
                   className="h-44 w-44 rounded-md"
                 />
                 <p className="text-sm text-zinc-400 break-words whitespace-normal">

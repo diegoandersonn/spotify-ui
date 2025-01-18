@@ -1,8 +1,5 @@
 import React from "react";
 import albumPic from "../../assets/albumpic.jpg";
-import connectToADeviceButton from "../../assets/connecttoadevice.png";
-import fullscreenButton from "../../assets/fullscreen.png";
-import queueButton from "../../assets/queue.png";
 import { HiOutlineQueueList } from "react-icons/hi2";
 import { AiOutlineArrowsAlt } from "react-icons/ai";
 import { FaCheckCircle, FaPauseCircle } from "react-icons/fa";
