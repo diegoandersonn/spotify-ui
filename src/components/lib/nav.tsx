@@ -1,20 +1,20 @@
 import React from "react";
-import playboyPic from "../../assets/playboypic.jpg";
-import cromadinhoPic from "../../assets/cromadinhopic.png";
+import artistPic from "../../assets/henriqueejuliano.jpg";
+import secondArtistPic from "../../assets/jorgeemateus.jpg";
 import playlistPic from "../../assets/playlistpic.jpg";
 
 export default function Nav() {
   const playlists = Array(8).fill({
-    title: "This Is Mc IG",
+    title: "Top 50 - Brasil",
     imgSrc: playlistPic,
   });
-  const playboyCard = Array(6).fill({
+  const artistCard = Array(6).fill({
     title: "Lorem ipsum dolor sit amet consectetur adipisicing...",
-    imgSrc: playboyPic,
+    imgSrc: artistPic,
   });
-  const cromadinhoCard = Array(6).fill({
+  const secondArtistCard = Array(6).fill({
     title: "Lorem ipsum dolor sit amet consectetur adipisicing...",
-    imgSrc: cromadinhoPic,
+    imgSrc: secondArtistPic,
   });
 
   return (
@@ -53,14 +53,14 @@ export default function Nav() {
       <div className="flex flex-col gap-6 mt-4 py-2 px-6">
         <div className="flex justify-between">
           <button className="text-3xl font-extrabold hover:underline">
-            Playb0y!
+            Henrique e Juliano!
           </button>
           <p className="flex items-center text-zinc-400 text-sm font-semibold hover:underline pr-10">
             Mostrar Tudo
           </p>
         </div>
         <div className="flex flex-wrap gap-4">
-          {playboyCard.map((card, index) => (
+          {artistCard.map((card, index) => (
             <div
               key={index}
               className="flex flex-col py-3 p-1 w-52 rounded-md hover:bg-neutral-800"
@@ -83,14 +83,14 @@ export default function Nav() {
       <div className="flex flex-col gap-6 mt-4 py-2 px-6">
         <div className="flex justify-between">
           <button className="text-3xl font-extrabold hover:underline">
-            Cromadinho!
+            Jorge e Mateus!
           </button>
           <p className="flex items-center text-zinc-400 text-sm font-semibold hover:underline pr-10">
             Mostrar Tudo
           </p>
         </div>
         <div className="flex flex-wrap gap-4">
-          {cromadinhoCard.map((card, index) => (
+          {secondArtistCard.map((card, index) => (
             <div
               key={index}
               className="flex flex-col py-3 p-1 w-52 rounded-md hover:bg-neutral-800"
@@ -98,8 +98,8 @@ export default function Nav() {
               <button className="flex flex-col justify-center items-center">
                 <img
                   src={card.imgSrc}
-                  alt="cromadinho"
-                  title="cromadinho"
+                  alt="secondArtist"
+                  title="secondArtist"
                   className="h-44 w-44 rounded-md"
                 />
                 <p className="text-sm text-zinc-400 break-words whitespace-normal">
@@ -113,14 +113,14 @@ export default function Nav() {
       <div className="flex flex-col gap-6 mt-4 py-2 px-6">
         <div className="flex justify-between">
           <button className="text-3xl font-extrabold hover:underline">
-            Cromadinho!
+            Jorge e Mateus!
           </button>
           <p className="flex items-center text-zinc-400 text-sm font-semibold hover:underline pr-10">
             Mostrar Tudo
           </p>
         </div>
         <div className="flex flex-wrap gap-4">
-          {cromadinhoCard.map((card, index) => (
+          {secondArtistCard.map((card, index) => (
             <div
               key={index}
               className="flex flex-col py-3 p-1 w-52 rounded-md hover:bg-neutral-800"
@@ -128,8 +128,8 @@ export default function Nav() {
               <button className="flex flex-col justify-center items-center">
                 <img
                   src={card.imgSrc}
-                  alt="cromadinho"
-                  title="cromadinho"
+                  alt="secondArtist"
+                  title="secondArtist"
                   className="h-44 w-44 rounded-md"
                 />
                 <p className="text-sm text-zinc-400 break-words whitespace-normal">
@@ -143,14 +143,14 @@ export default function Nav() {
       <div className="flex flex-col gap-6 mt-4 py-2 px-6">
         <div className="flex justify-between">
           <button className="text-3xl font-extrabold hover:underline">
-            Cromadinho!
+            Jorge e Mateus!
           </button>
           <p className="flex items-center text-zinc-400 text-sm font-semibold hover:underline pr-10">
             Mostrar Tudo
           </p>
         </div>
         <div className="flex flex-wrap gap-4">
-          {cromadinhoCard.map((card, index) => (
+          {secondArtistCard.map((card, index) => (
             <div
               key={index}
               className="flex flex-col py-3 p-1 w-52 rounded-md hover:bg-neutral-800"
@@ -158,8 +158,8 @@ export default function Nav() {
               <button className="flex flex-col justify-center items-center">
                 <img
                   src={card.imgSrc}
-                  alt="cromadinho"
-                  title="cromadinho"
+                  alt="secondArtist"
+                  title="secondArtist"
                   className="h-44 w-44 rounded-md"
                 />
                 <p className="text-sm text-zinc-400 break-words whitespace-normal">

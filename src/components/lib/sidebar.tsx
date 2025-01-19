@@ -1,13 +1,13 @@
 import React from "react";
 import playlistPic from "../../assets/playlistpic.jpg";
 import { AiFillPushpin } from "react-icons/ai";
-import { FaBookOpen, FaPlus, FaArrowRight, FaPlay } from "react-icons/fa6";
+import { FaBookOpen, FaPlus, FaArrowRight } from "react-icons/fa6";
 import { IoIosList } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 
 export default function Sidebar() {
   const playlists = Array(25).fill({
-    title: "This Is Mc IG",
+    title: "Top 50 - Brasil",
     description: "Playlist • Diego Anderson",
     imgSrc: playlistPic,
   });
